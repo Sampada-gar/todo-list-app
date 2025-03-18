@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean and modern font */
+  background-color: #f4f4f9; /* Light background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container that holds everything */
+.container {
+  background-color: white; /* White background for the container */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  max-width: 400px; /* Max width of the container */
+  text-align: center;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 24px;
+  color: #333; /* Dark grey text color */
+  margin-bottom: 20px;
+}
+
+/* Input box for adding tasks */
+#task-input {
+  width: 80%; /* Input width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#task-input:focus {
+  border-color: #5c9ded; /* Light blue border when focused */
+}
+
+/* Add task button styling */
+#add-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #5c9ded; /* Blue background */
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+  background-color: #4b8ad3; /* Slightly darker blue when hovered */
+}
+
+/* Task list */
+ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1; /* Takes up remaining space */
+}
+
+li button {
+  background-color: #e74c3c; /* Red color for delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c0392b; /* Darker red when hovered */
+}
